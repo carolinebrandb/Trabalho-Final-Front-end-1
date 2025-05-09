@@ -4,62 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineSerra</title>
+    <title>CineSerra | Quem Somos</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/componentesQsomos.css">
     <link rel="stylesheet" href="../css/layout.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- pagina quem somos nos com nome de cada criador do site header -->
-    <h1>Quem Somos?</h1>
-    <p>Esse site foi criado por:</p>
-    <ul class="nomes1" id="nomes">
-        <li>kauan Melo</li>
-        <li>Marcelo lopes</li>
-        <li>Caroline Brand</li>
-        <li>João vitor amaral</li>
-        <li>Thayná lima</li>
-    </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">CineSerra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Qsomos.html">Quem somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="imagens1" id="imagens">
-        <div class="alunos">
-            <img src="../img/joao.png" alt="João Vitor Amaral" width="200" height="200">
-            <p>neste trabalho fiz....</p>
-        </div>
-        <div class="alunos">
-            <img src="../img/thayná.jpg" alt="Thayná Lima" width="200" height="200">
-            <p>neste trabalho fiz....</p>
-        </div>
-        <div class="alunos">
-            <img src="../img/Marcelo vs.jpg" alt="Marcelo Lopes" width="200" height="200">
-            <p>neste trabalho fiz....</p>
-        </div>
-        <div class="alunos">
-            <img src="../img/carol.png" alt="carol Brand" width="200" height="200">
-            <p>neste trabalho fiz....</p>
-        </div>
-        <div class="alunos">
-            <img src="../img/kauan.jpg" alt="Kauan Melo" width="200" height="200">
-            <p>neste trabalho fiz....</p>
-        </div>
-    </div>
+    <!-- Conteúdo Principal -->
+    <main class="container my-5">
+        <h1 class="text-center">Quem Somos?</h1>
+        <p class="text-center">Esse site foi criado por:</p>
+        <ul class="nomes1 text-center list-unstyled" id="nomes">
+            <li>Kauan Melo</li>
+            <li>Marcelo Lopes</li>
+            <li>Caroline Brand</li>
+            <li>João Vitor Amaral</li>
+            <li>Thayná Lima</li>
+        </ul>
 
-    <footer>
-    <!-- footer com link para git hub-->
-        <div class="redes-sociais">
+        <div class="row text-center imagens1" id="imagens">
+            <div class="col-md-4 mb-4 alunos">
+                <img src="../img/joao.png" alt="João Vitor Amaral" class="img-fluid rounded" width="200" height="200">
+                <p>Neste trabalho fiz....</p>
+            </div>
+            <div class="col-md-4 mb-4 alunos">
+                <img src="../img/thayná.jpg" alt="Thayná Lima" class="img-fluid rounded" width="200" height="200">
+                <p>Neste trabalho fiz....</p>
+            </div>
+            <div class="col-md-4 mb-4 alunos">
+                <img src="../img/Marcelo vs.jpg" alt="Marcelo Lopes" class="img-fluid rounded" width="200" height="200">
+                <p>Neste trabalho fiz....</p>
+            </div>
+            <div class="col-md-4 mb-4 alunos">
+                <img src="../img/carolinebrand.png" alt="Caroline Brand" class="img-fluid rounded" width="200" height="200">
+                <p>Neste trabalho fiz....</p>
+            </div>
+            <div class="col-md-4 mb-4 alunos">
+                <img src="../img/kauan.jpg" alt="Kauan Melo" class="img-fluid rounded" width="200" height="200">
+                <p>Neste trabalho fiz....</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="mb-2">
             <a href="https://github.com/colosso97/Trabalho-Final-Front-end" target="_blank">
                 <img src="../img/github.png" alt="GitHub" width="50" height="50">
             </a>
         </div>
-
-        <div class="finalizacao">
-            <p>Obrigado por nôs escolherem como sua critica de cinema, CineSerra agradece sua preferência!</p>
-        </div>
+        <p>Obrigado por nos escolherem como sua crítica de cinema. CineSerra agradece sua preferência!</p>
     </footer>
-    <script>
 
-    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
